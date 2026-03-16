@@ -6,7 +6,7 @@ showcase my skills, projects, education, experience, and contact details in a
 clean, responsive, and modern design.
 
 Live Preview:
-https://ansh07017.github.io/My_Portfolio/
+https://ansh07017.github.io/MyPortfolio/
 (Deployed using GitHub Pages)
 
 -----------------

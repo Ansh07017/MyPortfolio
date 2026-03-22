@@ -1,0 +1,1332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ansh Pratap Singh | Software Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Ansh Pratap Singh - Software Developer specializing in full-stack development, AI systems, and cloud technologies."
+    />
+    <meta
+      property="og:title"
+      content="Ansh Pratap Singh | Software Developer"
+    />
+    <meta
+      property="og:description"
+      content="Software Developer specializing in full-stack development, AI systems, and cloud technologies."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/style.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">Ansh.</div>
+        <div class="nav-links">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#journey" class="nav-link">Journey</a>
+          <a href="#milestones" class="nav-link">Milestones</a>
+          <a href="#connect" class="nav-link">Connect</a>
+        </div>
+        <a
+          href="https://drive.google.com/file/d/1mhUzkthDpuLXfc5I00PpZBqKgDpUJ6Wh/view?usp=sharing"
+          target="_blank"
+          class="nav-resume"
+          id="resumeBtn"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+            />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <polyline points="10 9 9 9 8 9" />
+          </svg>
+          Download Resume
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#journey" class="mobile-link">Journey</a>
+        <a href="#milestones" class="mobile-link">Milestones</a>
+        <a href="#connect" class="mobile-link">Connect</a>
+        <a
+          href="https://drive.google.com/file/d/1TXEL8-7cs9OfT6L8KOKWcmDLatbBSrQK"
+          target="_blank"
+          class="mobile-resume"
+          >Download Resume</a
+        >
+      </div>
+    </nav>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero" id="home">
+      <div class="radar-rings">
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="ring ring-3"></div>
+        <div class="ring ring-4"></div>
+        <div class="ring ring-5"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-left" data-aos="fade-right">
+          <p class="hero-greeting">
+            Hey, I am <span class="accent">Ansh</span>
+          </p>
+          <h1 class="hero-title">
+            Software<br /><span class="accent">Developer</span>
+          </h1>
+          <p class="hero-subtitle">
+            Building intelligent systems, full-stack platforms, and impactful
+            software solutions — one commit at a time.
+          </p>
+          <div class="hero-buttons">
+            <a href="#connect" class="btn-hire">Hire me</a>
+            <a
+              href="mailto:pratapsingh07017@gmail.com"
+              class="btn-email"
+              aria-label="Email me"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,12 2,6" />
+              </svg>
+            </a>
+          </div>
+          <div class="hero-quote-card">
+            <span class="quote-icon">"</span>
+            <p>
+              Solved <strong>600+</strong> DSA problems. Top
+              <strong>27%</strong> in LeetCode contests. Semi-finalist at
+              <strong>EY Techathon 6.0</strong> — top 61 out of 183,000+ teams.
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-right" data-aos="fade-left">
+          <div class="avatar-container">
+            <div class="avatar-glow"></div>
+            <div class="avatar-ring outer-ring"></div>
+            <div class="avatar-ring inner-ring"></div>
+            <div class="avatar-wrapper">
+              <img
+                src="public/certificates/ansh2.jpg"
+                alt="Ansh Pratap Singh"
+                class="avatar-photo"
+              />
+            </div>
+
+            <!-- Floating tech icons — kept within orbit -->
+            <div class="tech-icon icon-java" title="Java">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                alt="Java"
+              />
+            </div>
+            <div class="tech-icon icon-python" title="Python">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                alt="Python"
+              />
+            </div>
+            <div class="tech-icon icon-react" title="React">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React"
+              />
+            </div>
+            <div class="tech-icon icon-nodejs" title="Node.js">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                alt="Node.js"
+              />
+            </div>
+            <div class="tech-icon icon-postgres" title="PostgreSQL">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                alt="PostgreSQL"
+              />
+            </div>
+            <div class="tech-icon icon-github" title="GitHub">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                alt="GitHub"
+                class="invert-icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-dot-anim"></div>
+        </div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    
+    <!-- ===================== SKILLS SECTION ===================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">What I know</span>
+          <h2 class="section-title">
+            Technical <span class="accent">Skills</span>
+          </h2>
+        </div>
+
+        <div class="skills-bento" data-aos="fade-up" data-aos-delay="100">
+          <!-- Row 1: Languages (split into two), Frameworks -->
+          <div class="bento-card bento-lang">
+            <div class="bento-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ff6b00"
+                stroke-width="2"
+              >
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3>Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <!-- Hackathons flashcard -->
+          <div class="bento-card bento-hackathons">
+            <div class="bento-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ff6b00"
+                stroke-width="2"
+              >
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
+            </div>
+            <h3>Hackathons</h3>
+            <div class="hackathon-list">
+              <div class="hackathon-item">
+                <div class="hackathon-badge">🥈</div>
+                <div>
+                  <p class="hackathon-name">EY Techathon 6.0</p>
+                  <p class="hackathon-sub">
+                    Semi-Finalist · Top 61 / 183K+ teams
+                  </p>
+                </div>
+              </div>
+              <div class="hackathon-item">
+                <div class="hackathon-badge">🚀</div>
+                <div>
+                  <p class="hackathon-name">Bhartiya Antariksh Hackathon</p>
+                  <p class="hackathon-sub">ISRO Organized · Space-Tech Track</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ff6b00"
+                stroke-width="2"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3>Frameworks</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Scikit-Learn</span>
+            </div>
+          </div>
+
+          <!-- Row 2: Stats, Databases, AI, Soft -->
+
+          <div class="bento-card">
+            <div class="bento-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ff6b00"
+                stroke-width="2"
+              >
+                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+              </svg>
+            </div>
+            <h3>Databases &amp; Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Supabase</span>
+              <span class="skill-tag">Git/GitHub</span>
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Hadoop</span>
+            </div>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ff6b00"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                />
+              </svg>
+            </div>
+            <h3>AI / ML Stack</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Langchain</span>
+              <span class="skill-tag">Pinecone</span>
+              <span class="skill-tag">Neo4j</span>
+              <span class="skill-tag">Hugging Face</span>
+              <span class="skill-tag">Gemini AI</span>
+            </div>
+          </div>
+
+          <div class="bento-card bento-soft">
+            <h3>Soft Skills</h3>
+            <ul class="soft-skills-list">
+              <li><span class="bullet">→</span> Analytical Thinking</li>
+              <li><span class="bullet">→</span> Strategic Planning</li>
+              <li><span class="bullet">→</span> Collaborative Leadership</li>
+              <li><span class="bullet">→</span> Continuous Learning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== JOURNEY SECTION ===================== -->
+    <section class="section journey-section" id="journey">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">My journey</span>
+          <h2 class="section-title">The <span class="accent">Journey</span></h2>
+        </div>
+
+        <!-- ─── EXPERIENCE ─── -->
+        <div class="journey-group" data-aos="fade-up">
+          <div class="journey-group-label">
+            <span class="group-icon">🏢</span>
+            <span>Experience</span>
+            <div class="group-line"></div>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot pulse"></div>
+              <div class="timeline-date">Feb 2026 – Present</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <div class="timeline-type work">Internship</div>
+                  <h3>SDE Intern – AI Knowledge Graph Builder</h3>
+                  <p class="timeline-company">Infosys Springboard</p>
+                  <a
+                    href="https://github.com/Ansh07017/KGB"
+                    target="_blank"
+                    class="timeline-link"
+                    >GitHub ↗</a>
+                  <a
+                    href=" https://kgb-12g3.onrender.com"
+                    target="_blank"
+                    class="timeline-link"
+                    >Live ↗</a
+                  >
+
+                </div>
+                
+                <ul class="timeline-points">
+                  <li>
+                    Built an AI-based enterprise intelligence system reducing
+                    manual information lookup by <strong>40%</strong>.
+                  </li>
+                  <li>
+                    Architected a scalable knowledge graph layer resulting in
+                    <strong>2x faster</strong> cross-entity queries.
+                  </li>
+                  <li>
+                    Maintained <strong>89% accuracy</strong> across 164 entities
+                    and 305 relationships.
+                  </li>
+                </ul>
+                <div class="timeline-stack">
+                  <span>Flask</span><span>Python</span><span>Pinecone</span
+                  ><span>Langchain</span><span>Neo4j</span
+                  ><span>Hugging Face</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot pulse"></div>
+              <div class="timeline-date">Sep 2025 – Oct 2025</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <div class="timeline-type work">Internship</div>
+                  <h3>Intern – Conversational Data Analysis with LLMs</h3>
+                  <p class="timeline-company">VOIS & Edunet Foundation</p>
+                  <a
+                    href="public/certificates/voisintern.jpg"
+                    target="_blank"
+                    class="timeline-link"
+                    >Certificate ↗</a>
+                  <a
+                    href="https://github.com/Ansh07017/Netflix_Movie_Analytics"
+                    target="_blank"
+                    class="timeline-link"
+                    >GitHub ↗</a
+                  >
+                </div>
+                
+                <ul class="timeline-points">
+                  <li>
+                    Completed the AICTE and 'VOIS for Tech University Engagement Program' led Virtual Internship.
+                  </li>
+                  <li>
+                    Gained specialized experience in Conversational Data Analysis with LLMs.
+                  </li>
+                </ul>
+                <div class="timeline-stack">
+                  <span>LLMs</span><span>Data Analysis</span><span>Python</span>
+                </div>
+              </div>
+          </div>
+
+           <div class="timeline-item">
+              <div class="timeline-dot pulse"></div>
+              <div class="timeline-date">May 2025 – Jun 2025</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <div class="timeline-type work">Internship</div>
+                  <h3>AI Azure Intern</h3>
+                  <p class="timeline-company">Microsoft & Edunet Foundation</p>
+                  <a
+                    href="public/certificates/microsoftinternship.jpg"
+                    target="_blank"
+                    class="timeline-link"
+                    >Certificate ↗</a>
+                  <a
+                    href="https://github.com/Ansh07017/customer_segmentation"
+                    target="_blank"
+                    class="timeline-link"
+                    >GitHub ↗</a
+                  >
+                </div>
+                
+                <ul class="timeline-points">
+                  <li>
+                    Successfully completed a 4-week internship on AI Azure.
+                  </li>
+                  <li>
+                    Participated in a Microsoft initiative implemented by Edunet Foundation in collaboration with AICTE.
+                  </li>
+                </ul>
+                <div class="timeline-stack">
+                  <span>Microsoft Azure</span><span>AI</span><span>Cloud Computing</span>
+                </div>
+              </div>
+          </div>
+
+          
+
+        </div>
+
+        <!-- ─── TRAINING ─── -->
+        <div class="journey-group" data-aos="fade-up">
+          <div class="journey-group-label">
+            <span class="group-icon">📚</span>
+            <span>Training</span>
+            <div class="group-line"></div>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot training"></div>
+              <div class="timeline-date">Jul 2025</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <div class="timeline-type training-badge">Training</div>
+                  <h3>A Guide to Machine Learning with Data Science</h3>
+                  <p class="timeline-company">CipherSchools, India</p>
+                  <a
+                    href="public/certificates/cipherschool.png"
+                    target="_blank"
+                    class="timeline-link"
+                    >Certificate ↗</a
+                  >
+                  <a
+                    href="https://github.com/Ansh07017/Diabetes_Diagnosis"
+                    target="_blank"
+                    class="timeline-link"
+                    >GitHub ↗</a>
+                    <a
+                    href="https://diabetesdiagnosis.streamlit.app/"
+                    target="_blank"
+                    class="timeline-link"
+                    >Live ↗</a
+                  >
+                    
+                </div>
+                <ul class="timeline-points">
+                  <li>
+                    Completed intensive training on ML fundamentals, data
+                    preprocessing, and model evaluation techniques.
+                  </li>
+                  <li>
+                    Covered supervised and unsupervised learning algorithms
+                    using Python, Pandas, and Scikit-Learn.
+                  </li>
+                </ul>
+                <div class="timeline-stack">
+                  <span>Python</span><span>Pandas</span><span>Scikit-Learn</span
+                  ><span>Matplotlib</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ─── PROJECTS ─── -->
+        <div class="journey-group" data-aos="fade-up">
+          <div class="journey-group-label">
+            <span class="group-icon">💻</span>
+            <span>Projects</span>
+            <div class="group-line"></div>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Feb 2026</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <div class="timeline-type project">Project</div>
+                  <h3>TenderFlow – AI Bid Analyzer &amp; Pricing Engine</h3>
+                  <a
+                    href="https://github.com/Ansh07017"
+                    target="_blank"
+                    class="timeline-link"
+                    >GitHub ↗</a
+                  >
+                </div>
+                <ul class="timeline-points">
+                  <li>
+                    Multi-agent AI platform increasing RFP throughput by
+                    <strong>7x</strong>.
+                  </li>
+                  <li>
+                    Reduced end-to-end response time from
+                    <strong>72+ hours to 30 minutes</strong>.
+                  </li>
+                  <li>
+                    HITL validation console for audit-ready PDF Bid Analysis
+                    Reports.
+                  </li>
+                </ul>
+                <div class="timeline-stack">
+                  <span>Express</span><span>Node.js</span><span>PostgreSQL</span
+                  ><span>Gemini AI</span><span>Grok</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Jan 2026</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <div class="timeline-type project">Project</div>
+                  <h3>FinSight – Financial Intelligence Platform</h3>
+                  <a
+                    href="https://github.com/Ansh07017"
+                    target="_blank"
+                    class="timeline-link"
+                    >GitHub ↗</a
+                  >
+                   <a
+                    href=" https://kgb-12g3.onrender.com"
+                    target="_blank"
+                    class="timeline-link"
+                    >Live ↗</a
+                  >
+                </div>
+                <ul class="timeline-points">
+                  <li>
+                    Full-stack financial platform supporting
+                    <strong>10+ active users</strong>.
+                  </li>
+                  <li>
+                    JWT auth + OTP contributing to
+                    <strong>20% reduction</strong> in user spending.
+                  </li>
+                  <li>Deployed via CI/CD with GitHub Actions on Render.</li>
+                </ul>
+                <div class="timeline-stack">
+                  <span>React</span><span>TypeScript</span><span>Supabase</span
+                  ><span>Google OAuth</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Dec 2025</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <div class="timeline-type project">Project</div>
+                  <h3>Toptimizer – Timetable Optimizer &amp; Tracker</h3>
+                  <a
+                    href="https://github.com/Ansh07017"
+                    target="_blank"
+                    class="timeline-link"
+                    >GitHub ↗</a
+                  >
+                </div>
+                <ul class="timeline-points">
+                  <li>
+                    DAG-based O(V+A) algorithm with
+                    <strong>95% schedule generation efficiency</strong>.
+                  </li>
+                  <li>
+                    Decoupled two-process architecture with cloud persistence
+                    via Supabase.
+                  </li>
+                  <li>
+                    Gantt and line chart analytics with 8-day inactivity alerts.
+                  </li>
+                </ul>
+                <div class="timeline-stack">
+                  <span>Electron</span><span>TypeScript</span
+                  ><span>Supabase</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ─── HACKATHONS ─── -->
+        <div class="journey-group" data-aos="fade-up">
+          <div class="journey-group-label">
+            <span class="group-icon">🏆</span>
+            <span>Hackathons</span>
+            <div class="group-line"></div>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot hackathon"></div>
+              <div class="timeline-date">Feb 2026</div>
+              <div class="timeline-card hackathon-card">
+                <div class="timeline-card-header">
+                  <div class="timeline-type hackathon-badge-type">
+                    Hackathon
+                  </div>
+                  <h3>EY Techathon 6.0</h3>
+                  <span class="rank-badge">🥈 Semi-Finalist</span>
+                </div>
+                <ul class="timeline-points">
+                  <li>
+                    Ranked in the <strong>top 61 teams</strong> out of 183,000+
+                    participating teams nationally.
+                  </li>
+                  <li>
+                    Built TenderFlow — a multi-agent AI platform to automate GeM
+                    tender processing.
+                  </li>
+                  <li>
+                    Increased RFP throughput by <strong>7x</strong>, reducing
+                    turnaround from 72h to 30 minutes.
+                  </li>
+                </ul>
+                <div class="timeline-stack">
+                  <span>Express</span><span>Node.js</span><span>Gemini AI</span
+                  ><span>PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot hackathon"></div>
+              <div class="timeline-date">Sep 2025</div>
+              <div class="timeline-card hackathon-card">
+                <div class="timeline-card-header">
+                  <div class="timeline-type hackathon-badge-type">
+                    Hackathon
+                  </div>
+                  <h3>Bhartiya Antariksh Hackathon</h3>
+                  <span class="rank-badge">🚀 ISRO Organized</span>
+                  <a
+                    href="public/certificates/bhartiyaantariksh.jpg"
+                    target="_blank"
+                    class="timeline-link"
+                    >Certificate ↗</a
+                  >
+                </div>
+                <ul class="timeline-points">
+                  <li>
+                    Participated in the national space-tech hackathon organized
+                    by ISRO.
+                  </li>
+                  <li>
+                    Submitted the idea on preventing wildfires in forest using heat sensors and geo satellite images.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ─── EDUCATION ─── -->
+        <div class="journey-group" data-aos="fade-up">
+          <div class="journey-group-label">
+            <span class="group-icon">🎓</span>
+            <span>Education</span>
+            <div class="group-line"></div>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot edu"></div>
+              <div class="timeline-date">Aug 2023 – Present</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <div class="timeline-type education">Education</div>
+                  <h3>B.Tech – Computer Science &amp; Engineering</h3>
+                  <p class="timeline-company">
+                    Lovely Professional University, Phagwara
+                  </p>
+                </div>
+                <p class="timeline-info">
+                  CGPA: <strong class="accent">9.13 / 10</strong>
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot edu"></div>
+              <div class="timeline-date">Apr 2022 – Mar 2023</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <div class="timeline-type education">Education</div>
+                  <h3>Higher Secondary (12th Grade)</h3>
+                  <p class="timeline-company">
+                    Saint John's Academy, Prayagraj
+                  </p>
+                </div>
+                <p class="timeline-info">
+                  Percentage: <strong class="accent">92.25%</strong>
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot edu"></div>
+              <div class="timeline-date">Apr 2020 – Mar 2021</div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <div class="timeline-type education">Education</div>
+                  <h3>Secondary (10th Grade)</h3>
+                  <p class="timeline-company">
+                    Saint John's Academy, Prayagraj
+                  </p>
+                </div>
+                <p class="timeline-info">
+                  Percentage: <strong class="accent">94.4%</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MILESTONES SECTION ===================== -->
+    <section class="section milestones-section" id="milestones">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Recognition</span>
+          <h2 class="section-title">Mile<span class="accent">stones</span></h2>
+        </div>
+
+        <!-- ─── CERTIFICATIONS ─── -->
+        <div class="milestone-group" data-aos="fade-up">
+          <div class="milestone-group-header">
+            <h3 class="milestone-group-title">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ff6b00"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="8" r="6" />
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+              </svg>
+              Certifications
+            </h3>
+          </div>
+          <div class="certs-img-grid">
+            <div class="cert-img-card" data-aos="fade-up" data-aos-delay="0">
+              <a
+                href="public/certificates/aivectorsearch.png"
+                target="_blank"
+                class="cert-img-link"
+              >
+                <img
+                  src="public/certificates/aivectorsearch.png"
+                  alt="Oracle AI Vector Search Certified Professional"
+                  class="cert-img"
+                />
+                <div class="cert-img-overlay">
+                  <span>View Certificate</span>
+                </div>
+              </a>
+              <div class="cert-img-info">
+                <h4>Oracle AI Vector Search</h4>
+                <p>Oracle Certified Professional · Jul 2025</p>
+              </div>
+            </div>
+
+            <div class="cert-img-card" data-aos="fade-up" data-aos-delay="80">
+              <a href="public/certificates/ocidev.jpg" target="_blank" class="cert-img-link">
+                <img
+                  src="public/certificates/ocidev.png"
+                  alt="Oracle OCI Developer Professional"
+                  class="cert-img"
+                />
+                <div class="cert-img-overlay">
+                  <span>View Certificate</span>
+                </div>
+              </a>
+              <div class="cert-img-info">
+                <h4>OCI Developer Professional</h4>
+                <p>Oracle Certified · Sep 2025</p>
+              </div>
+            </div>
+
+            <div class="cert-img-card" data-aos="fade-up" data-aos-delay="160">
+              <a
+                href="public/certificates/ocidatascience.jpg"
+                target="_blank"
+                class="cert-img-link"
+              >
+                <img
+                  src="public/certificates/ocidatascience.jpg"
+                  alt="Oracle OCI Data Science Professional"
+                  class="cert-img"
+                />
+                <div class="cert-img-overlay">
+                  <span>View Certificate</span>
+                </div>
+              </a>
+              <div class="cert-img-info">
+                <h4>OCI Data Science Professional</h4>
+                <p>Oracle Certified · Aug 2025</p>
+              </div>
+            </div>
+
+            <div class="cert-img-card" data-aos="fade-up" data-aos-delay="240">
+              <a
+                href="public/certificates/ocigenai.jpg"
+                target="_blank"
+                class="cert-img-link"
+              >
+                <img
+                  src="public/certificates/ocigenai.jpg"
+                  alt="Oracle OCI Generative AI Professional"
+                  class="cert-img"
+                />
+                <div class="cert-img-overlay">
+                  <span>View Certificate</span>
+                </div>
+              </a>
+              <div class="cert-img-info">
+                <h4>OCI Generative AI Professional</h4>
+                <p>Oracle Certified · Aug 2025</p>
+              </div>
+            </div>
+
+            <div
+              class="cert-img-card cert-coming"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+            <a
+                href="public/certificates/cloudcomputing.jpg"
+                target="_blank"
+                class="cert-img-link"
+              >
+                <img
+                  src="public/certificates/cloudcomputing.jpg"
+                  alt="CipherSchools ML Certificate"
+                  class="cert-img"
+                />
+                <div class="cert-img-overlay">
+                  <span>View Certificate</span>
+                </div>
+              </a>
+              <div class="cert-img-info">
+                <h4>Cloud Computing</h4>
+                <p>NPTEL · Dec 2025</p>
+              </div>
+            </div>
+            <div
+              class="cert-img-card cert-coming"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+            <a
+                href="public/certificates/daa.jpg"
+                target="_blank"
+                class="cert-img-link"
+              >
+                <img
+                  src="public/certificates/daa.jpg"
+                  alt="DAA Certificate"
+                  class="cert-img"
+                />
+                <div class="cert-img-overlay">
+                  <span>View Certificate</span>
+                </div>
+              </a>
+              <div class="cert-img-info">
+                <h4>Design and Analysis of Algorithms</h4>
+                <p>NPTEL · Dec 2025</p>
+              </div>
+            </div>
+
+            <div
+              class="cert-img-card cert-coming"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+            <a
+                href="public/certificates/mckinsey.jpg"
+                target="_blank"
+                class="cert-img-link"
+              >
+                <img
+                  src="public/certificates/mckinsey.jpg"
+                  alt="prss Certificate"
+                  class="cert-img"
+                />
+                <div class="cert-img-overlay">
+                  <span>View Certificate</span>
+                </div>
+              </a>
+              <div class="cert-img-info">
+                <h4>Mckinsey Forward Program</h4>
+                <p>Mckinsey · December 2025</p>
+              </div>
+            </div>
+
+            <div class="cert-img-card" data-aos="fade-up" data-aos-delay="320">
+              <a
+                href="public/certificates/backend_google(Node.js and express)_page-0001.jpg"
+                target="_blank"
+                class="cert-img-link"
+              >
+                <img
+                  src="public/certificates/backend_google(Node.js and express)_page-0001.jpg"
+                  alt="CipherSchools ML Certificate"
+                  class="cert-img"
+                />
+                <div class="cert-img-overlay">
+                  <span>View Certificate</span>
+                </div>
+              </a>
+              <div class="cert-img-info">
+                <h4>Node.js and Express Bootcamp</h4>
+                <p>Google Developer Club · Jul 2025</p>
+              </div>
+            </div>
+
+            <div
+              class="cert-img-card cert-coming"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+            <a
+                href="public/certificates/isro.jpg"
+                target="_blank"
+                class="cert-img-link"
+              >
+                <img
+                  src="public/certificates/isro.jpg"
+                  alt="Isro Course Certificate"
+                  class="cert-img"
+                />
+                <div class="cert-img-overlay">
+                  <span>View Certificate</span>
+                </div>
+              </a>
+              <div class="cert-img-info">
+                <h4>RS & GIS Applications in Natural Resource Management</h4>
+                <p>ISRO · Dec 2024</p>
+              </div>
+            </div>
+
+            <div
+              class="cert-img-card cert-coming"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+            <a
+                href="public/certificates/hp_agile_model_1.jpg"
+                target="_blank"
+                class="cert-img-link"
+              >
+                <img
+                  src="public/certificates/hp_agile_model_1.jpg"
+                  alt="HP hp_agile_model_1 Certificate"
+                  class="cert-img"
+                />
+                <div class="cert-img-overlay">
+                  <span>View Certificate</span>
+                </div>
+              </a>
+              <div class="cert-img-info">
+                <h4>Agile Project Management</h4>
+                <p>HP · June 2025</p>
+              </div>
+            </div>
+
+            
+            
+          </div>
+        </div>
+
+        <!-- ─── ACHIEVEMENTS ─── -->
+        <div class="milestone-group" data-aos="fade-up">
+          <div class="milestone-group-header">
+            <h3 class="milestone-group-title">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ff6b00"
+                stroke-width="2"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              Achievements
+            </h3>
+          </div>
+          <div class="achievements-grid">
+            <div class="achievement-card" data-aos="fade-up" data-aos-delay="0">
+              <div class="achievement-icon">⚡</div>
+              <div class="achievement-content">
+                <h4>LeetCode 1576 Rating</h4>
+                <p>
+                  Ranked in the <strong>Top 27%</strong> globally with
+                  <strong>600+ DSA problems</strong> solved across arrays,
+                  graphs, DP, and system design.
+                </p>
+              </div>
+            </div>
+            <div
+              class="achievement-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="achievement-icon">🏆</div>
+              <div class="achievement-content">
+                <h4>EY Techathon 6.0 Semi-Finalist</h4>
+                <p>
+                  Ranked in the <strong>top 61 teams</strong> from over
+                  <strong>183,000+ teams</strong> nationally. Built TenderFlow —
+                  an AI bid automation platform.
+                </p>
+              </div>
+            </div>
+            <div
+              class="achievement-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="achievement-icon">♚</div>
+              <div class="achievement-content">
+                <h4>Interschool Chess Competition</h4>
+                <p>
+                  Represented <strong>School of Computer Science & Engineering</strong> in Interschool Chess Competition, finishing third in the University.
+                </p>
+              </div>
+            </div>
+            <div
+              class="achievement-card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="achievement-icon">🎓</div>
+              <div class="achievement-content">
+                <h4>Academic Excellence</h4>
+                <p>
+                  Received <strong>University Honor Roll for Academic Excellence </strong>consistently being in the top 1 percentile.
+                </p>
+                 <a
+                    href="public/certificates/honorroll.jpg"
+                    target="_blank"
+                    class="timeline-link"
+                    >Certificate ↗</a
+                  >
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONNECT SECTION ===================== -->
+    <section class="section connect-section" id="connect">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">Get in touch</span>
+          <h2 class="section-title">
+            Let's <span class="accent">Connect</span>
+          </h2>
+          <p class="section-subtitle">
+            Have a project in mind or want to collaborate? I'd love to hear from
+            you.
+          </p>
+        </div>
+
+        <div class="connect-grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="connect-info">
+            <div class="connect-item">
+              <div class="connect-item-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ff6b00"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,12 2,6" />
+                </svg>
+              </div>
+              <div>
+                <p class="connect-label">Email</p>
+                <a
+                  href="mailto:pratapsingh07017@gmail.com"
+                  class="connect-value"
+                  >pratapsingh07017@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="connect-item">
+              <div class="connect-item-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ff6b00"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1 19.79 19.79 0 0 1 1.58 4.5 2 2 0 0 1 3.54 2.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l1.06-.6a2 2 0 0 1 2.11.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17.93z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p class="connect-label">Phone</p>
+                <a href="tel:+917800425585" class="connect-value"
+                  >+91-7800425585</a
+                >
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/anshpratap"
+                target="_blank"
+                class="social-btn"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/Ansh07017"
+                target="_blank"
+                class="social-btn"
+                aria-label="GitHub"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <form
+            class="contact-form"
+            id="contactForm"
+            action="https://formspree.io/f/movlnjnb"
+            method="POST"
+          >
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell me about your project or idea..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <span>Send Message</span>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+              ✓ Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-logo">Ansh.</p>
+        <p class="footer-text">
+          Designed &amp; Built by
+          <span class="accent">Ansh Pratap Singh</span> &nbsp;·&nbsp; 2026
+        </p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#journey">Journey</a>
+          <a href="#milestones">Milestones</a>
+          <a href="#connect">Connect</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="public/script.js"></script>
+  </body>
+</html>

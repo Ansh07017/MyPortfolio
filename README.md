@@ -49,6 +49,7 @@ This portfolio was constructed using the core pillars of the web:
 </div>
 
 ---
+#Dynamic Link: https://ansh07017.github.io/MyPortfolio/
 
 ## 📂 Folder Structure
 

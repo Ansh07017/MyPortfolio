@@ -258,13 +258,15 @@ body {
 
 .avatar-container {
   position: relative;
-  width: 360px; height: 360px;
+  /* Increased from 360px to 440px to fit the larger rings and icons */
+  width: 440px; height: 440px; 
   flex-shrink: 0;
 }
 
 .avatar-glow {
   position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-  width: 320px; height: 320px; border-radius: 50%;
+  /* Increased from 320px to 380px to match the outer ring */
+  width: 380px; height: 380px; border-radius: 50%;
   background: radial-gradient(circle, rgba(255,107,0,0.18) 0%, transparent 70%);
   animation: glow-pulse 3s ease-in-out infinite;
 }
@@ -276,13 +278,19 @@ body {
   border-radius: 50%;
   border: 1px solid rgba(255,107,0,0.22);
 }
-.outer-ring { width: 320px; height: 320px; animation: spin-slow 20s linear infinite; border-top-color: rgba(255,107,0,0.5); }
-.inner-ring { width: 265px; height: 265px; animation: spin-slow 15s linear infinite reverse; border-right-color: rgba(255,107,0,0.4); }
+
+/* Increased from 320px to 380px */
+.outer-ring { width: 380px; height: 380px; animation: spin-slow 20s linear infinite; border-top-color: rgba(255,107,0,0.5); }
+
+/* Increased from 265px to 310px */
+.inner-ring { width: 310px; height: 310px; animation: spin-slow 15s linear infinite reverse; border-right-color: rgba(255,107,0,0.4); }
+
 @keyframes spin-slow { from{transform:translate(-50%,-50%) rotate(0deg)} to{transform:translate(-50%,-50%) rotate(360deg)} }
 
 .avatar-wrapper {
   position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-  width: 210px; height: 210px; border-radius: 50%;
+  /* Increased from 210px to 250px */
+  width: 250px; height: 250px; border-radius: 50%;
   border: 2px solid rgba(255,107,0,0.2);
   overflow: hidden;
   background: #0a0a0a;
@@ -312,12 +320,12 @@ body {
 @keyframes float-2 { 0%,100%{transform:translateY(0) rotate(4deg)} 50%{transform:translateY(-9px) rotate(4deg)} }
 @keyframes float-3 { 0%,100%{transform:translateY(-4px)} 50%{transform:translateY(7px)} }
 
-/* Positions: all measured from top-left of the 360px container */
+/* Positions adjusted slightly for the new 440px container */
 .icon-java     { top: 16px;  left: 50%;  margin-left: -24px; animation: float-1 4.2s ease-in-out infinite; }
-.icon-python   { top: 80px;  left: 8px;  animation: float-2 5s ease-in-out infinite 0.5s; }
-.icon-react    { bottom: 80px; left: 10px; animation: float-3 4.5s ease-in-out infinite 1s; }
-.icon-nodejs   { top: 80px;  right: 8px;  animation: float-1 5s ease-in-out infinite 1.5s; }
-.icon-postgres { bottom: 80px; right: 10px; animation: float-2 3.8s ease-in-out infinite 0.8s; }
+.icon-python   { top: 100px; left: 12px; animation: float-2 5s ease-in-out infinite 0.5s; }
+.icon-react    { bottom: 100px; left: 14px; animation: float-3 4.5s ease-in-out infinite 1s; }
+.icon-nodejs   { top: 100px; right: 12px; animation: float-1 5s ease-in-out infinite 1.5s; }
+.icon-postgres { bottom: 100px; right: 14px; animation: float-2 3.8s ease-in-out infinite 0.8s; }
 .icon-github   { bottom: 16px; left: 50%; margin-left: -24px; animation: float-3 4s ease-in-out infinite 0.3s; }
 
 /* Scroll indicator */

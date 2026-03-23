@@ -210,25 +210,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  /* ---- Blinking cursor on hero title ---- */
-  const heroTitle = document.querySelector('.hero-title');
-  if (heroTitle) {
-    const cursor = document.createElement('span');
-    cursor.textContent = '|';
-    cursor.style.cssText = 'color:#ff6b00;margin-left:2px;animation:blink 1s step-end infinite;';
-    const style = document.createElement('style');
-    style.textContent = '@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}';
-    document.head.appendChild(style);
-    heroTitle.appendChild(cursor);
-  }
    // Typewriter Effect
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
 const textArray = ["Software Developer", "AI Systems Architect"];
-const typingDelay = 100;
-const erasingDelay = 60;
-const newTextDelay = 2500; // How long it pauses before backspacing
+const typingDelay = 150;
+const erasingDelay = 160;
+const newTextDelay = 3500;
 let textArrayIndex = 0;
 let charIndex = 0;
 
@@ -258,7 +247,7 @@ function erase() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  if (textArray.length) setTimeout(type, newTextDelay + 250);
-});
+  if (textArray.length) {
+    setTimeout(type, newTextDelay + 250);
+  }
 });

@@ -258,15 +258,18 @@ body {
 
 .avatar-container {
   position: relative;
-  /* Increased from 360px to 440px to fit the larger rings and icons */
-  width: 440px; height: 440px; 
+  /* Increased by 80% (Base 360px -> 650px) */
+  width: 650px !important; 
+  height: 650px !important; 
   flex-shrink: 0;
 }
 
 .avatar-glow {
   position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-  /* Increased from 320px to 380px to match the outer ring */
-  width: 380px; height: 380px; border-radius: 50%;
+  /* Increased by 80% (Base 320px -> 580px) */
+  width: 580px !important; 
+  height: 580px !important; 
+  border-radius: 50%;
   background: radial-gradient(circle, rgba(255,107,0,0.18) 0%, transparent 70%);
   animation: glow-pulse 3s ease-in-out infinite;
 }
@@ -279,18 +282,20 @@ body {
   border: 1px solid rgba(255,107,0,0.22);
 }
 
-/* Increased from 320px to 380px */
-.outer-ring { width: 380px; height: 380px; animation: spin-slow 20s linear infinite; border-top-color: rgba(255,107,0,0.5); }
+/* Increased by 80% (Base 320px -> 580px) */
+.outer-ring { width: 580px !important; height: 580px !important; animation: spin-slow 20s linear infinite; border-top-color: rgba(255,107,0,0.5); }
 
-/* Increased from 265px to 310px */
-.inner-ring { width: 310px; height: 310px; animation: spin-slow 15s linear infinite reverse; border-right-color: rgba(255,107,0,0.4); }
+/* Increased by 80% (Base 265px -> 480px) */
+.inner-ring { width: 480px !important; height: 480px !important; animation: spin-slow 15s linear infinite reverse; border-right-color: rgba(255,107,0,0.4); }
 
 @keyframes spin-slow { from{transform:translate(-50%,-50%) rotate(0deg)} to{transform:translate(-50%,-50%) rotate(360deg)} }
 
 .avatar-wrapper {
   position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-  /* Increased from 210px to 250px */
-  width: 250px; height: 250px; border-radius: 50%;
+  /* Increased by 80% (Base 210px -> 380px) */
+  width: 380px !important; 
+  height: 380px !important; 
+  border-radius: 50%;
   border: 2px solid rgba(255,107,0,0.2);
   overflow: hidden;
   background: #0a0a0a;
@@ -315,19 +320,18 @@ body {
 .tech-icon img { width: 26px; height: 26px; object-fit: contain; }
 .invert-icon { filter: invert(1) brightness(0.8); }
 
-/* All icons positioned strictly inside the 360px container */
+/* All icons positioned strictly inside the container */
 @keyframes float-1 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
 @keyframes float-2 { 0%,100%{transform:translateY(0) rotate(4deg)} 50%{transform:translateY(-9px) rotate(4deg)} }
 @keyframes float-3 { 0%,100%{transform:translateY(-4px)} 50%{transform:translateY(7px)} }
 
-/* Positions adjusted slightly for the new 440px container */
-.icon-java     { top: 16px;  left: 50%;  margin-left: -24px; animation: float-1 4.2s ease-in-out infinite; }
-.icon-python   { top: 100px; left: 12px; animation: float-2 5s ease-in-out infinite 0.5s; }
-.icon-react    { bottom: 100px; left: 14px; animation: float-3 4.5s ease-in-out infinite 1s; }
-.icon-nodejs   { top: 100px; right: 12px; animation: float-1 5s ease-in-out infinite 1.5s; }
-.icon-postgres { bottom: 100px; right: 14px; animation: float-2 3.8s ease-in-out infinite 0.8s; }
-.icon-github   { bottom: 16px; left: 50%; margin-left: -24px; animation: float-3 4s ease-in-out infinite 0.3s; }
-
+/* Positions pushed outward to match the massive 650px container */
+.icon-java     { top: 25px;   left: 50%;  margin-left: -24px; animation: float-1 4.2s ease-in-out infinite; }
+.icon-python   { top: 140px;  left: 15px; animation: float-2 5s ease-in-out infinite 0.5s; }
+.icon-react    { bottom: 140px; left: 15px; animation: float-3 4.5s ease-in-out infinite 1s; }
+.icon-nodejs   { top: 140px;  right: 15px; animation: float-1 5s ease-in-out infinite 1.5s; }
+.icon-postgres { bottom: 140px; right: 15px; animation: float-2 3.8s ease-in-out infinite 0.8s; }
+.icon-github   { bottom: 25px;  left: 50%; margin-left: -24px; animation: float-3 4s ease-in-out infinite 0.3s; }
 /* Scroll indicator */
 .scroll-indicator {
   position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%);

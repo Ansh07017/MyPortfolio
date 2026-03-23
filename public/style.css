@@ -325,12 +325,12 @@ body {
 @keyframes float-3 { 0%,100%{transform:translateY(-4px)} 50%{transform:translateY(7px)} }
 
 /* Positions adjusted perfectly for the 504px container */
-.icon-java     { top: 20px;   left: 50%;  margin-left: -24px; animation: float-1 4.2s ease-in-out infinite; }
-.icon-python   { top: 115px;  left: 12px; animation: float-2 5s ease-in-out infinite 0.5s; }
-.icon-react    { bottom: 115px; left: 12px; animation: float-3 4.5s ease-in-out infinite 1s; }
-.icon-nodejs   { top: 115px;  right: 12px; animation: float-1 5s ease-in-out infinite 1.5s; }
-.icon-postgres { bottom: 115px; right: 12px; animation: float-2 3.8s ease-in-out infinite 0.8s; }
-.icon-github   { bottom: 20px;  left: 50%; margin-left: -24px; animation: float-3 4s ease-in-out infinite 0.3s; }
+.icon-java     { top: 17px;   left: 50%;  margin-left: -24px; animation: float-1 4.2s ease-in-out infinite; }
+.icon-python   { top: 110px;  left: 12px; animation: float-2 5s ease-in-out infinite 0.5s; }
+.icon-react    { bottom: 110px; left: 12px; animation: float-3 4.5s ease-in-out infinite 1s; }
+.icon-nodejs   { top: 110px;  right: 12px; animation: float-1 5s ease-in-out infinite 1.5s; }
+.icon-postgres { bottom: 110px; right: 12px; animation: float-2 3.8s ease-in-out infinite 0.8s; }
+.icon-github   { bottom: 17px;  left: 50%; margin-left: -24px; animation: float-3 4s ease-in-out infinite 0.3s; }
 
 /* Scroll indicator */
 .scroll-indicator {
@@ -675,6 +675,21 @@ body {
   border-radius: var(--radius-sm);
 }
 .form-success.visible { display: block; }
+
+.cursor {
+  display: inline-block;
+  width: 4px;
+  background-color: var(--primary); /* Neon Orange */
+  animation: blink 1s infinite;
+  margin-left: 2px;
+}
+.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
 
 /* ============ FOOTER ============ */
 .footer {

@@ -3,6 +3,28 @@
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', function () {
+  /* ---- THEME TOGGLE (Dark/Light Mode) ---- */
+  const themeToggle = document.getElementById('themeToggle');
+  const body = document.body;
+
+  // Check Local Storage for saved theme
+  const savedTheme = localStorage.getItem('portfolioTheme');
+  if (savedTheme === 'light') {
+    body.classList.add('light-mode');
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('light-mode');
+      
+      // Save preference to Local Storage
+      if (body.classList.contains('light-mode')) {
+        localStorage.setItem('portfolioTheme', 'light');
+      } else {
+        localStorage.setItem('portfolioTheme', 'dark');
+      }
+    });
+  }
 
   /* ---- SCROLL-SPY: Active nav link ---- */
   const navLinks = document.querySelectorAll('.nav-link');
@@ -214,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function () {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Software Developer", "AI Systems Architect"];
+const textArray = ["Software Developer", "AI Systems Architect", "Data Engineer", "CSE Student"];
 const typingDelay = 150;
 const erasingDelay = 160;
 const newTextDelay = 3500;

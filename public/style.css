@@ -30,6 +30,116 @@
   --text-muted: rgba(255, 255, 255, 0.55);
   --text-dim: rgba(255, 255, 255, 0.35);
 }
+/* ============ LIGHT MODE VARIABLES ============ */
+body.light-mode {
+  --bg: #f8f9fa;
+  --bg-secondary: #ffffff;
+  --bg-card: rgba(0, 0, 0, 0.02);
+  --bg-card-hover: rgba(0, 0, 0, 0.05);
+  --border: rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(255, 107, 0, 0.4);
+  --text: #1a1a1a;
+  --text-muted: rgba(0, 0, 0, 0.65);
+  --text-dim: rgba(0, 0, 0, 0.45);
+  --glass: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(0, 0, 0, 0.1);
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+  background: rgba(255, 107, 0, 0.08);
+}
+
+/* Hide moon by default (since dark mode is default) */
+.moon-icon { display: none; }
+body.light-mode .sun-icon { display: none; }
+body.light-mode .moon-icon { display: block; }
+/* ---- LIGHT MODE OVERRIDES ---- */
+
+/* Fix Navbar Visibility */
+body.light-mode .nav-container {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+body.light-mode .mobile-menu {
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Fix Contact Form Inputs Visibility */
+body.light-mode .form-group input,
+body.light-mode .form-group textarea {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: var(--text);
+}
+body.light-mode .form-group input::placeholder,
+body.light-mode .form-group textarea::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* Fix Hero Quote Card Visibility */
+body.light-mode .hero-quote-card {
+  background: rgba(255, 255, 255, 0.65);
+}
+/* Fix Floating Tech Icons */
+body.light-mode .tech-icon {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+/* Reverts the GitHub icon back to its original black color */
+body.light-mode .invert-icon {
+  filter: none; 
+}
+
+/* Fix Scroll Mouse Visibility */
+body.light-mode .scroll-mouse {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+body.light-mode .scroll-indicator {
+  color: var(--text-muted); 
+}
+
+/* Fix Hackathon Yellow Contrast (Shifted to Dark Goldenrod) */
+body.light-mode .timeline-dot.hackathon {
+  background: rgba(184, 134, 11, 0.15); 
+  border-color: rgba(184, 134, 11, 0.7);
+}
+body.light-mode .timeline-card.hackathon-card {
+  border-color: rgba(184, 134, 11, 0.2);
+}
+body.light-mode .timeline-card.hackathon-card:hover {
+  border-color: rgba(184, 134, 11, 0.4);
+}
+body.light-mode .timeline-type.hackathon-badge-type {
+  color: #b8860b; /* Dark Goldenrod */
+  background: rgba(184, 134, 11, 0.1); 
+  border-color: rgba(184, 134, 11, 0.2);
+}
+body.light-mode .rank-badge {
+  color: #b8860b; 
+  background: rgba(184, 134, 11, 0.1); 
+  border-color: rgba(184, 134, 11, 0.2);
+}
+body.light-mode .skill-track { background: rgba(0, 0, 0, 0.08); }
+/*light mode ends*/
 
 html { scroll-behavior: smooth; overflow-x: hidden; }
 
@@ -200,6 +310,161 @@ body {
 .ring-5 { width: 640px; height: 640px; animation-delay: 1.6s; border-color: rgba(255,107,0,0.02); }
 @keyframes pulse-ring { 0%,100%{opacity:1} 50%{opacity:0.35} }
 
+/* ---- Animated Skill Bars ---- */
+.skill-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.skill-bar-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.skill-info span:first-child {
+  color: var(--text);
+}
+
+.skill-track {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 107, 0, 0.4); /* Gives it a neon glow */
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: fillBar 1.2s cubic-bezier(0.1, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes fillBar {
+  to { transform: scaleX(1); }
+}
+
+
+/* ============ CODING DASHBOARD ============ */
+.coding-section { background: var(--bg-secondary); }
+
+.coding-dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.dashboard-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0,0,0,0.3);
+}
+
+/* Specific Hover Accents based on platform brand colors */
+.leetcode-card:hover { border-color: rgba(255, 161, 22, 0.4); box-shadow: 0 10px 30px rgba(255, 161, 22, 0.1); }
+.github-card:hover { border-color: rgba(255, 255, 255, 0.3); }
+.hackerrank-card:hover { border-color: rgba(46, 200, 102, 0.4); box-shadow: 0 10px 30px rgba(46, 200, 102, 0.1); }
+.gfg-card:hover { border-color: rgba(47, 141, 70, 0.4); box-shadow: 0 10px 30px rgba(47, 141, 70, 0.1); }
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.card-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  flex: 1;
+}
+
+/* Live Ping Indicator */
+.live-ping {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2EC866;
+  background: rgba(46, 200, 102, 0.1);
+  padding: 4px 8px;
+  border-radius: var(--radius-pill);
+}
+.ping-dot {
+  width: 6px; height: 6px;
+  background-color: #2EC866;
+  border-radius: 50%;
+  animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+@keyframes ping {
+  75%, 100% { transform: scale(2.5); opacity: 0; }
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-box { display: flex; flex-direction: column; gap: 4px; }
+.stat-label { font-size: 0.75rem; color: var(--text-muted); font-weight: 500; }
+.stat-value { font-size: 1.4rem; font-weight: 700; color: var(--text); }
+.stat-value.highlight { color: var(--accent); }
+
+.card-link {
+  margin-top: auto;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: var(--transition);
+  display: inline-block;
+}
+.dashboard-card:hover .card-link { color: var(--accent); }
+
+/* --- Light Mode Overrides for Dashboard --- */
+body.light-mode .dashboard-card { background: rgba(0, 0, 0, 0.02); }
+body.light-mode .github-card .card-header svg { fill: #1a1a1a; }
+body.light-mode .github-card:hover { border-color: rgba(0, 0, 0, 0.2); }
+
+/* Update this existing class */
+.bento-lang { 
+  grid-column: span 2; 
+  grid-row: span 2; /* This tells the card to span two rows vertically */
+}
 /* Hero layout */
 .hero-content {
   display: grid; grid-template-columns: 1fr 1fr;
@@ -707,7 +972,8 @@ body {
 /* ============ RESPONSIVE ============ */
 @media (max-width: 960px) {
   .skills-bento { grid-template-columns: repeat(2, 1fr); }
-  .bento-lang, .bento-hackathons { grid-column: span 1; }
+  .bento-lang { grid-column: span 2; }
+  .bento-hackathons { grid-column: span 2; }
 
   .hero-content { grid-template-columns: 1fr; text-align: center; gap: 50px; }
   .hero-buttons { justify-content: center; }
@@ -722,7 +988,7 @@ body {
   .nav-container { padding: 9px 14px; }
   .nav-links, .nav-resume { display: none; }
   .hamburger { display: flex; margin-left: auto; }
-
+  .scroll-indicator { display: none; }
   .hero { padding: 88px 20px 56px; }
   .section { padding: 55px 0; }
   .container { padding: 0 18px; }
@@ -730,10 +996,17 @@ body {
   .skills-bento { grid-template-columns: 1fr; }
   .bento-lang, .bento-hackathons { grid-column: span 1; }
 
-  .avatar-container { width: 280px; height: 280px; }
-  .outer-ring { width: 250px; height: 250px; }
-  .inner-ring { width: 205px; height: 205px; }
-  .avatar-wrapper { width: 165px; height: 165px; }
+  /* Add !important to forcefully shrink the avatar on phones */
+  .avatar-container { width: 320px !important; height: 320px !important; }
+  .outer-ring { width: 280px !important; height: 280px !important; }
+  .inner-ring { width: 230px !important; height: 230px !important; }
+  .avatar-wrapper { width: 180px !important; height: 180px !important; }
+  
+  /* Pull the floating icons closer so they don't fly off the screen */
+  .icon-python { top: 60px; left: 0px; }
+  .icon-react { bottom: 60px; left: 0px; }
+  .icon-nodejs { top: 60px; right: 0px; }
+  .icon-postgres { bottom: 60px; right: 0px; }
 
   .timeline-item { grid-template-columns: 1fr; gap: 4px; }
   .timeline-date { text-align: left; padding-top: 0; padding-bottom: 6px; }

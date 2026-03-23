@@ -30,14 +30,33 @@
     <!-- NAVIGATION -->
     <nav class="navbar" id="navbar">
       <div class="nav-container">
-        <div class="nav-logo">Ansh.</div>
+        <div class="nav-logo">
+  <img src="public/certificates/logo.png" alt="Ansh." style="height: 38px; width: auto; border-radius: 8px; display: block;">
+</div>
         <div class="nav-links">
           <a href="#home" class="nav-link active">Home</a>
           <a href="#skills" class="nav-link">Skills</a>
+          <a href="#coding-profile" class="nav-link">Coding</a>
           <a href="#journey" class="nav-link">Journey</a>
           <a href="#milestones" class="nav-link">Milestones</a>
           <a href="#connect" class="nav-link">Connect</a>
         </div>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+  <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="5"></circle>
+    <line x1="12" y1="1" x2="12" y2="3"></line>
+    <line x1="12" y1="21" x2="12" y2="23"></line>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+    <line x1="1" y1="12" x2="3" y2="12"></line>
+    <line x1="21" y1="12" x2="23" y2="12"></line>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+  </svg>
+  <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+  </svg>
+</button>
         <a
           href="https://drive.google.com/file/d/1mhUzkthDpuLXfc5I00PpZBqKgDpUJ6Wh/view?usp=sharing"
           target="_blank"
@@ -69,6 +88,7 @@
       <div class="mobile-menu" id="mobileMenu">
         <a href="#home" class="mobile-link">Home</a>
         <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#coding-profile" class="mobile-link">Coding</a>
         <a href="#journey" class="mobile-link">Journey</a>
         <a href="#milestones" class="mobile-link">Milestones</a>
         <a href="#connect" class="mobile-link">Connect</a>
@@ -126,13 +146,14 @@
             </a>
           </div>
           <div class="hero-quote-card">
-            <span class="quote-icon">"</span>
-            <p>
-              Solved <strong>600+</strong> DSA problems. Top
-              <strong>27%</strong> in LeetCode contests. Semi-finalist at
-              <strong>EY Techathon 6.0</strong> — top 61 out of 183,000+ teams.
-            </p>
-          </div>
+  <span class="quote-icon">"</span>
+  <p>
+    Solved <strong>600+</strong> DSA problems across different coding platforms. Top
+    <strong>27%</strong> in LeetCode contests. Semi-finalist at
+    <strong>EY Techathon 6.0</strong> - top 61 out of 183,000+ teams. 
+    Maintained academic excellence with a <strong>9.13 CGPA</strong>.
+  </p>
+</div>
         </div>
 
         <div class="hero-right" data-aos="fade-left">
@@ -205,71 +226,58 @@
         <div class="section-header" data-aos="fade-up">
           <span class="section-tag">What I know</span>
           <h2 class="section-title">
-            Technical <span class="accent">Skills</span>
+            My <span class="accent">Skills</span>
           </h2>
         </div>
 
         <div class="skills-bento" data-aos="fade-up" data-aos-delay="100">
-          <!-- Row 1: Languages (split into two), Frameworks -->
+          
           <div class="bento-card bento-lang">
-            <div class="bento-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#ff6b00"
-                stroke-width="2"
-              >
-                <polyline points="16 18 22 12 16 6" />
-                <polyline points="8 6 2 12 8 18" />
-              </svg>
-            </div>
-            <h3>Languages</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Java</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">C++</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">TypeScript</span>
-              <span class="skill-tag">SQL</span>
-            </div>
-          </div>
+  <div class="bento-icon">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff6b00" stroke-width="2">
+      <polyline points="16 18 22 12 16 6" />
+      <polyline points="8 6 2 12 8 18" />
+    </svg>
+  </div>
+  <h3>Programming <span class="accent">Languages</span></h3>
+  
+  <div class="skill-bars">
+    <div class="skill-bar-group">
+      <div class="skill-info"><span>Java</span><span class="skill-percent">90%</span></div>
+      <div class="skill-track"><div class="skill-fill" style="width: 90%;"></div></div>
+    </div>
+    
+    <div class="skill-bar-group">
+      <div class="skill-info"><span>Python</span><span class="skill-percent">85%</span></div>
+      <div class="skill-track"><div class="skill-fill" style="width: 85%;"></div></div>
+    </div>
+    
+    <div class="skill-bar-group">
+      <div class="skill-info"><span>C++</span><span class="skill-percent">80%</span></div>
+      <div class="skill-track"><div class="skill-fill" style="width: 80%;"></div></div>
+    </div>
 
-          <!-- Hackathons flashcard -->
-          <div class="bento-card bento-hackathons">
-            <div class="bento-icon">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#ff6b00"
-                stroke-width="2"
-              >
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-              </svg>
-            </div>
-            <h3>Hackathons</h3>
-            <div class="hackathon-list">
-              <div class="hackathon-item">
-                <div class="hackathon-badge">🥈</div>
-                <div>
-                  <p class="hackathon-name">EY Techathon 6.0</p>
-                  <p class="hackathon-sub">
-                    Semi-Finalist · Top 61 / 183K+ teams
-                  </p>
-                </div>
-              </div>
-              <div class="hackathon-item">
-                <div class="hackathon-badge">🚀</div>
-                <div>
-                  <p class="hackathon-name">Bhartiya Antariksh Hackathon</p>
-                  <p class="hackathon-sub">ISRO Organized · Space-Tech Track</p>
-                </div>
-              </div>
-            </div>
-          </div>
+     <div class="skill-bar-group">
+      <div class="skill-info"><span>C</span><span class="skill-percent">70%</span></div>
+      <div class="skill-track"><div class="skill-fill" style="width: 70%;"></div></div>
+    </div>
+    
+    <div class="skill-bar-group">
+      <div class="skill-info"><span>JavaScript</span><span class="skill-percent">80%</span></div>
+      <div class="skill-track"><div class="skill-fill" style="width: 80%;"></div></div>
+    </div>
+
+    <div class="skill-bar-group">
+      <div class="skill-info"><span>TypeScript</span><span class="skill-percent">75%</span></div>
+      <div class="skill-track"><div class="skill-fill" style="width: 75%;"></div></div>
+    </div>
+
+    <div class="skill-bar-group">
+      <div class="skill-info"><span>SQL</span><span class="skill-percent">85%</span></div>
+      <div class="skill-track"><div class="skill-fill" style="width: 85%;"></div></div>
+    </div>
+  </div>
+</div>
 
           <div class="bento-card">
             <div class="bento-icon">
@@ -286,14 +294,16 @@
                 <line x1="12" y1="17" x2="12" y2="21" />
               </svg>
             </div>
-            <h3>Frameworks</h3>
+            <h3>Frameworks <span class="accent">&amp; Libraries</span></h3>
             <div class="skill-tags">
               <span class="skill-tag">React</span>
               <span class="skill-tag">Node.js</span>
               <span class="skill-tag">Express</span>
               <span class="skill-tag">Flask</span>
               <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">psutil</span>
               <span class="skill-tag">Scikit-Learn</span>
+              <span class="skill-tag">Nodemailer</span>
             </div>
           </div>
 
@@ -314,13 +324,14 @@
                 <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
               </svg>
             </div>
-            <h3>Databases &amp; Tools</h3>
+            <h3>Databases <span class="accent">&amp; Tools</span></h3>
             <div class="skill-tags">
               <span class="skill-tag">PostgreSQL</span>
               <span class="skill-tag">MongoDB</span>
               <span class="skill-tag">Supabase</span>
               <span class="skill-tag">Git/GitHub</span>
               <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Excel</span>
               <span class="skill-tag">Hadoop</span>
             </div>
           </div>
@@ -342,18 +353,28 @@
                 />
               </svg>
             </div>
-            <h3>AI / ML Stack</h3>
+            <h3>AI / ML Tech <span class="accent">Stack</span></h3>
             <div class="skill-tags">
               <span class="skill-tag">Langchain</span>
               <span class="skill-tag">Pinecone</span>
               <span class="skill-tag">Neo4j</span>
               <span class="skill-tag">Hugging Face</span>
-              <span class="skill-tag">Gemini AI</span>
+              <span class="skill-tag">Gemini</span>
+              <span class="skill-tag">Groq</span>
+              <span class="skill-tag">UptimeBot</span>
             </div>
           </div>
 
           <div class="bento-card bento-soft">
-            <h3>Soft Skills</h3>
+            <div class="bento-icon">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff6b00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+    <circle cx="9" cy="7" r="4"></circle>
+    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+  </svg>
+</div>
+            <h3>Soft <span class= "accent">Skills</span></h3>
             <ul class="soft-skills-list">
               <li><span class="bullet">→</span> Analytical Thinking</li>
               <li><span class="bullet">→</span> Strategic Planning</li>
@@ -364,6 +385,93 @@
         </div>
       </div>
     </section>
+
+    <!-- ===================== CODING SECTION ===================== -->
+
+    <section class="section coding-section" id="coding-profile">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">Developer Stats</span>
+      <h2 class="section-title">Coding <span class="accent">Profile</span></h2>
+    </div>
+
+    <div class="coding-dashboard-grid" data-aos="fade-up" data-aos-delay="100">
+      
+      <div class="dashboard-card leetcode-card">
+        <div class="card-header">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="#FFA116"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.939 5.939 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.259 2.717 2.717 0 0 1 .5-.743l3.853-4.126 5.406-5.788c.54-.54.54-1.414.003-1.955a1.377 1.377 0 0 0-.95-.404zm3.018 15.99c-.646 0-1.171.524-1.171 1.17 0 .647.525 1.171 1.171 1.171h5.92c.645 0 1.17-.524 1.17-1.171 0-.646-.525-1.17-1.17-1.17h-5.92z"/></svg>
+          <h3>LeetCode</h3>
+        </div>
+        <div class="stat-grid">
+          <div class="stat-box">
+            <span class="stat-label">Problems Solved</span>
+            <span class="stat-value highlight" id="lc-solved">450+</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Contest Rating</span>
+            <span class="stat-value" id="lc-rating">1576</span>
+          </div>
+        </div>
+        <a href="https://leetcode.com/u/Ansh07107/" target="_blank" class="card-link">View Profile ↗</a>
+      </div>
+
+      <div class="dashboard-card github-card">
+        <div class="card-header">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          <h3>GitHub</h3>
+        </div>
+        <div class="stat-grid">
+          <div class="stat-box">
+            <span class="stat-label">Public Repos</span>
+            <span class="stat-value highlight" id="gh-repos">32</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Contributions</span>
+            <span class="stat-value" id="gh-contributions">320+</span>
+          </div>
+        </div>
+        <a href="https://github.com/Ansh07017" target="_blank" class="card-link">View Profile ↗</a>
+      </div>
+
+      <div class="dashboard-card hackerrank-card">
+        <div class="card-header">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="#2EC866"><path d="M11.987 14.138l-3.128 3.128v-5.73l3.128 3.128zM14.49 11.636L11.362 8.508v5.73l3.128-2.602zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.761 16.275h-2.146v-3.218l-3.208-3.208 3.208-3.208v-3.218h2.146v12.852zM6.24 16.275H4.094V3.423H6.24v3.218l3.208 3.208-3.208 3.208v3.218z"/></svg>
+          <h3>HackerRank</h3>
+        </div>
+        <div class="stat-grid">
+          <div class="stat-box">
+            <span class="stat-label">Certifications</span>
+            <span class="stat-value highlight">4</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Badges</span>
+            <span class="stat-value">5</span>
+          </div>
+        </div>
+        <a href="https://www.hackerrank.com/profile/pratapsingh07017" target="_blank" class="card-link">View Profile ↗</a>
+      </div>
+
+      <div class="dashboard-card gfg-card">
+        <div class="card-header">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="#2F8D46"><path d="M12.002 1.974c-5.534 0-10.02 4.486-10.02 10.026s4.486 10.026 10.02 10.026 10.02-4.486 10.02-10.026-4.486-10.026-10.02-10.026zm-2.887 13.916c-2.43 0-4.4-1.972-4.4-4.403 0-2.43 1.97-4.402 4.4-4.402 1.63 0 3.045.895 3.774 2.21l-1.636 1.002c-.416-.76-.995-1.21-2.138-1.21-1.34 0-2.398 1.055-2.398 2.4 0 1.344 1.058 2.402 2.398 2.402 1.144 0 1.723-.45 2.138-1.21l1.636 1c-.729 1.315-2.144 2.21-3.774 2.21zm7.774-2.192v2.002h-3.89V6.108h3.89v2.002h-1.89v1.944h1.89v2.002h-1.89v1.642h1.89z"/></svg>
+          <h3>GeeksforGeeks</h3>
+        </div>
+        <div class="stat-grid">
+          <div class="stat-box">
+            <span class="stat-label">Coding Score</span>
+            <span class="stat-value highlight">191</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Problems Solved</span>
+            <span class="stat-value">103</span>
+          </div>
+        </div>
+        <a href="https://www.geeksforgeeks.org/profile/user_7zjet4usuff?tab=activity" target="_blank" class="card-link">View Profile ↗</a>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <!-- ===================== JOURNEY SECTION ===================== -->
     <section class="section journey-section" id="journey">
@@ -569,7 +677,7 @@
                   <div class="timeline-type project">Project</div>
                   <h3>TenderFlow – AI Bid Analyzer &amp; Pricing Engine</h3>
                   <a
-                    href="https://github.com/Ansh07017"
+                    href="https://github.com/Ansh07017/Tender_Flow"
                     target="_blank"
                     class="timeline-link"
                     >GitHub ↗</a
@@ -604,13 +712,13 @@
                   <div class="timeline-type project">Project</div>
                   <h3>FinSight – Financial Intelligence Platform</h3>
                   <a
-                    href="https://github.com/Ansh07017"
+                    href="https://github.com/Ansh07017/Finsight"
                     target="_blank"
                     class="timeline-link"
                     >GitHub ↗</a
                   >
                    <a
-                    href=" https://kgb-12g3.onrender.com"
+                    href="https://finsight-yodo.onrender.com/"
                     target="_blank"
                     class="timeline-link"
                     >Live ↗</a
@@ -642,7 +750,7 @@
                   <div class="timeline-type project">Project</div>
                   <h3>Toptimizer – Timetable Optimizer &amp; Tracker</h3>
                   <a
-                    href="https://github.com/Ansh07017"
+                    href="https://github.com/Ansh07017/Timetable-Optimizer"
                     target="_blank"
                     class="timeline-link"
                     >GitHub ↗</a
@@ -959,7 +1067,29 @@
                 <p>NPTEL · Dec 2025</p>
               </div>
             </div>
+          </div>
+        </div>
 
+        <!-- ─── CERTIFICATIONS ─── -->
+        <div class="milestone-group" data-aos="fade-up">
+          <div class="milestone-group-header">
+            <h3 class="milestone-group-title">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ff6b00"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="8" r="6" />
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+              </svg>
+              Certificates
+            </h3>
+          </div>
+
+          <div class="certs-img-grid">
             <div
               class="cert-img-card cert-coming"
               data-aos="fade-up"
@@ -982,6 +1112,30 @@
               <div class="cert-img-info">
                 <h4>Mckinsey Forward Program</h4>
                 <p>Mckinsey · December 2025</p>
+              </div>
+            </div>
+            <div
+              class="cert-img-card cert-coming"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+            <a
+                href="public/certificates/mongodb.jpg"
+                target="_blank"
+                class="cert-img-link"
+              >
+                <img
+                  src="public/certificates/mongodb.jpg"
+                  alt="Isro Course Certificate"
+                  class="cert-img"
+                />
+                <div class="cert-img-overlay">
+                  <span>View Certificate</span>
+                </div>
+              </a>
+              <div class="cert-img-info">
+                <h4>MongoDB Python Developer Path</h4>
+                <p>MongoDB · Feb 2026</p>
               </div>
             </div>
 
@@ -1031,6 +1185,7 @@
               </div>
             </div>
 
+            
             <div
               class="cert-img-card cert-coming"
               data-aos="fade-up"
@@ -1055,9 +1210,6 @@
                 <p>HP · June 2025</p>
               </div>
             </div>
-
-            
-            
           </div>
         </div>
 
@@ -1248,6 +1400,41 @@
                 </svg>
                 GitHub
               </a>
+
+              <a
+    href="https://leetcode.com/u/Ansh07107/"
+    target="_blank"
+    class="social-btn"
+    aria-label="LeetCode"
+  >
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.939 5.939 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.259 2.717 2.717 0 0 1 .5-.743l3.853-4.126 5.406-5.788c.54-.54.54-1.414.003-1.955a1.377 1.377 0 0 0-.95-.404zm3.018 15.99c-.646 0-1.171.524-1.171 1.17 0 .647.525 1.171 1.171 1.171h5.92c.645 0 1.17-.524 1.17-1.171 0-.646-.525-1.17-1.17-1.17h-5.92z"/>
+    </svg>
+    LeetCode
+  </a>
+
+  <a
+    href="https://www.hackerrank.com/profile/pratapsingh07017"
+    target="_blank"
+    class="social-btn"
+    aria-label="HackerRank"
+  >
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M11.987 14.138l-3.128 3.128v-5.73l3.128 3.128zM14.49 11.636L11.362 8.508v5.73l3.128-2.602zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.761 16.275h-2.146v-3.218l-3.208-3.208 3.208-3.208v-3.218h2.146v12.852zM6.24 16.275H4.094V3.423H6.24v3.218l3.208 3.208-3.208 3.208v3.218z"/>
+    </svg>
+    HackerRank
+  </a>
+  <a
+    href="https://www.geeksforgeeks.org/profile/user_7zjet4usuff?tab=activity" 
+    target="_blank"
+    class="social-btn"
+    aria-label="GeeksforGeeks"
+  >
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.002 1.974c-5.534 0-10.02 4.486-10.02 10.026s4.486 10.026 10.02 10.026 10.02-4.486 10.02-10.026-4.486-10.026-10.02-10.026zm-2.887 13.916c-2.43 0-4.4-1.972-4.4-4.403 0-2.43 1.97-4.402 4.4-4.402 1.63 0 3.045.895 3.774 2.21l-1.636 1.002c-.416-.76-.995-1.21-2.138-1.21-1.34 0-2.398 1.055-2.398 2.4 0 1.344 1.058 2.402 2.398 2.402 1.144 0 1.723-.45 2.138-1.21l1.636 1c-.729 1.315-2.144 2.21-3.774 2.21zm7.774-2.192v2.002h-3.89V6.108h3.89v2.002h-1.89v1.944h1.89v2.002h-1.89v1.642h1.89z"/>
+    </svg>
+    GeeksforGeeks
+  </a>
             </div>
           </div>
 
@@ -1312,7 +1499,9 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
-        <p class="footer-logo">Ansh.</p>
+        <div class="footer-logo" style="margin-bottom: 8px;">
+  <img src="public/certificates/logo.png" alt="Ansh." style="height: 48px; width: auto; border-radius: 20px; display: block;">
+</div>
         <p class="footer-text">
           Designed &amp; Built by
           <span class="accent">Ansh Pratap Singh</span> &nbsp;·&nbsp; 2026
@@ -1320,6 +1509,7 @@
         <div class="footer-links">
           <a href="#home">Home</a>
           <a href="#skills">Skills</a>
+          <a href="#coding-profile">Coding</a>
           <a href="#journey">Journey</a>
           <a href="#milestones">Milestones</a>
           <a href="#connect">Connect</a>

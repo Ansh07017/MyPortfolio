@@ -116,6 +116,12 @@ body.light-mode .scroll-mouse {
 body.light-mode .scroll-indicator {
   color: var(--text-muted); 
 }
+/* Hide light logo by default */
+.logo-light { display: none; }
+
+/* When light mode is active, hide dark logo and show light logo */
+body.light-mode .logo-dark { display: none; }
+body.light-mode .logo-light { display: block; }
 
 /* Fix Hackathon Yellow Contrast (Shifted to Dark Goldenrod) */
 body.light-mode .timeline-dot.hackathon {
